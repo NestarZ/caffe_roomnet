@@ -7,8 +7,8 @@ layer {
   top: "type"
   is_test: false
   heatmap_data_param {
-    source: "/workspace/train/training.txt"
-    root_img_dir: "/data01/vision_rd/zhangfengyang/roomnet/LSUN/images/"
+    source: "/workspace/caffe_roomnet/train/training.txt"
+    root_img_dir: "/workspace/data/LSUN/images/"
     batchsize: 10
     outsize: 320
     label_width: 40
