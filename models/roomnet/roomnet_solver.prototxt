@@ -1,4 +1,4 @@
-net: "/data01/vision_rd/zhangfengyang/roomnet/caffe_roomnet/models/roomnet/roomnet_multistage.prototxt"
+net: "/workspace/models/roomnet/roomnet_multistage.prototxt"
 test_initialization: false
 test_iter: 1
 test_interval: 10000000
@@ -11,5 +11,5 @@ momentum: 0.9
 max_iter: 100000
 weight_decay: 0.0005
 snapshot: 2000
-snapshot_prefix: "/data01/vision_rd/zhangfengyang/roomnet/caffe_roomnet/snapshots_std5_swap"
+snapshot_prefix: "/workspace/snapshots_std5_swap"
 solver_mode: GPU
