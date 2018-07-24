@@ -27,7 +27,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ENV CAFFE_ROOT=/opt/caffe
 WORKDIR $CAFFE_ROOT
 
-RUN git clone --depth 1 https://github.com/FengyangZhang/caffe_roomnet.git . && \
+RUN git clone --depth 1 https://github.com/NestarZ/caffe_roomnet . && \
     pip install --upgrade pip==9.0.3 && \
     cd python && for req in $(cat requirements.txt) pydot; do pip install $req; done && cd .. && \
     git clone https://github.com/NVIDIA/nccl.git && cd nccl && make -j install && cd .. && rm -rf nccl && \
